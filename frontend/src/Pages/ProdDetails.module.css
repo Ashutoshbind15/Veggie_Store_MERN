@@ -1,0 +1,9 @@
+.img img {
+  max-height: 30rem;
+  width: 100%;
+}
+
+.desc {
+  min-height: 40%;
+  border: 1px solid gray;
+}

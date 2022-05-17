@@ -1,0 +1,12 @@
+.img {
+  max-height: 9rem;
+  width: 100%;
+}
+
+.des {
+  text-align: center;
+}
+
+.des span {
+  padding: 0.5rem;
+}
