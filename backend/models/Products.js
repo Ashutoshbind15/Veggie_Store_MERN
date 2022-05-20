@@ -6,9 +6,9 @@ const ProductSchema = mongoose.Schema({
   qty: Number,
   description: String,
   image: String,
-  user: {
+  farm: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
+    ref: "Farm",
   },
 });
 
