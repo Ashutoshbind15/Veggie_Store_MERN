@@ -24,7 +24,7 @@ const NavbarC = () => {
   return (
     <div className={classes.nav}>
       <div className={classes.links}>
-        <Link to="/">FarmStand</Link>
+        <Link to="/">Veggie Store</Link>
         <Link to="/products">Products</Link>
         <Link to="/farms">Farms</Link>
         <Link to="/products/new">Add product</Link>

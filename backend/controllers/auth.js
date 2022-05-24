@@ -23,7 +23,7 @@ export const signUp = catchAsync(async (req, res) => {
       process.env.SECRET
     );
 
-    const userData = { name, email, contact };
+    const userData = { name, email, contact, roles };
 
     res.status(201).json({ userData, token });
   } catch (error) {
@@ -50,6 +50,7 @@ export const signIn = catchAsync(async (req, res, next) => {
           name: user.name,
           email: user.email,
           contact: user.contact,
+          roles,
         };
         res.status(201).json({
           userData,

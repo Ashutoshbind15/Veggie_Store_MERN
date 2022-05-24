@@ -15,8 +15,7 @@ export const getProduct = catchAsync(async (req, res) => {
   try {
     const { id } = req.params;
     const product = await Product.findById(id).populate({
-      path: "user",
-      select: "-password -products",
+      path: "farm",
     });
     res.status(200).json(product);
   } catch (error) {
